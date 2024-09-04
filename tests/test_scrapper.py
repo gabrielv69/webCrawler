@@ -8,12 +8,12 @@ class TestScraper(unittest.TestCase):
         self.scraper.get_data_entries()  # Fetch data for testing
         
     def test_get_data_entries(self):
-        self.assertEqual(len(self.scraper.entries), 30, "Should fetch 30 entries")
+        self.assertEqual(len(self.scraper.entries), self.scraper.max_entries, "Should fetch N entries")
     
     def test_filter_more_than_five_words(self):
         filtered = self.scraper.filter_entries()
         for entry in filtered:
-            self.assertTrue(entry['words'] <= 5, "Entry title should have less than five words")
+            self.assertTrue(entry['words'] <= self.scraper.reference_number, "Entry title should have less than N words")
             
     def test_order(self):
         filtered = self.scraper.filter_entries()
