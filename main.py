@@ -1,4 +1,4 @@
-from scrapper import Scrapper
+from src.scrapper import Scrapper
 import argparse
 
 def main(): 

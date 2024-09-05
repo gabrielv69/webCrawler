@@ -1,4 +1,4 @@
-from database_manager import DatabaseManager
+from database.database_manager import DatabaseManager
 from bs4 import BeautifulSoup
 from datetime import datetime
 import requests

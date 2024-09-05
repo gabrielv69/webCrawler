@@ -1,6 +1,6 @@
 import sqlite3
 import unittest
-from scrapper import Scrapper
+from src.scrapper import Scrapper
 
 class TestScraper(unittest.TestCase):
     
