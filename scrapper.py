@@ -2,7 +2,6 @@ from database_manager import DatabaseManager
 from bs4 import BeautifulSoup
 from datetime import datetime
 import requests
-import sqlite3
 import re
 
 """Definition for scrapper class
@@ -93,6 +92,7 @@ class Scrapper:
     
     def show_scraping_data(self):
         rows = self.db.fetch_all("SELECT * FROM usage_data")
+        print('='*24 + ' USAGE DATA ' +'='*24)
         for row in rows:
             print(row)
               
