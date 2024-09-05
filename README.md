@@ -41,6 +41,7 @@ After installing angular, we can run the project, using the command:
 python scrapper.py <url> <num_entries> <word_limit> <word_count_filter> <order_by> <order>
 ```
 Arguments description:
+
     <num_entries>: The number of entries you wish to scrape (for example, 30 for the first 30 entries).
     <word_limit>: The word limit to use for filtering entries by title (e.g., 5 for entries with titles of 5 words or less).
     <word_count_filter>: The filter criteria based on the length of the title. It can be:
