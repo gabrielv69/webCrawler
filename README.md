@@ -38,7 +38,7 @@ pip install -r .\requirements.txt
 ```
 After installing angular, we can run the project, using the command:
 ```bash
-python scrapper.py <url> <num_entries> <word_limit> <word_count_filter> <order_by> <order>
+python scrapper.py <num_entries> <word_limit> <word_count_filter> <order_by> <order>
 ```
 Arguments description:
 
